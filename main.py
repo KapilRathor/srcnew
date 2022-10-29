@@ -21,7 +21,7 @@ tstart=time.time()
 # Arguments
 parser = argparse.ArgumentParser(description='Adversarial Continual Learning...')
 # Load the config file
-parser.add_argument('--config',  type=str, default='./configs/config_mnist5.yml')
+parser.add_argument('--config',  type=str, default='srcnew/configs/config_mnist5.yml')
 flags =  parser.parse_args()
 args = OmegaConf.load(flags.config)
 
